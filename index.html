@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meem's Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+        }
+        .btn-glow {
+            box-shadow: 0px 4px 10px rgba(236, 172, 10, 0.5);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen bg-gradient-to-r from-gray-900 to-gray-850">
+
+    <div class="glass p-6 rounded-2xl shadow-2xl text-white w-80">
+        <input type="text" id="inputBox" placeholder="0" readonly
+            class="w-full text-right text-4xl bg-transparent border-none outline-none p-4 mb-5 text-white">
+        
+        <div class="grid grid-cols-4 gap-4">
+            <button class="operation bg-gray-700 hover:bg-gray-600 rounded-full p-4">AC</button>
+            <button class="operation bg-gray-700 hover:bg-gray-600 rounded-full p-4">DEL</button>
+            <button class="operation bg-gray-700 hover:bg-gray-600 rounded-full p-4">%</button>
+            <button class="operator bg-orange-500 hover:bg-orange-400 rounded-full p-4 btn-glow">/</button>
+
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">7</button>
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">8</button>
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">9</button>
+            <button class="operator bg-orange-500 hover:bg-orange-400 rounded-full p-4 btn-glow">*</button>
+
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">4</button>
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">5</button>
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">6</button>
+            <button class="operator bg-orange-500 hover:bg-orange-400 rounded-full p-4 btn-glow">-</button>
+
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">1</button>
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">2</button>
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">3</button>
+            <button class="operator bg-orange-500 hover:bg-orange-400 rounded-full p-4 btn-glow">+</button>
+
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">00</button>
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">0</button>
+            <button class="bg-gray-800 hover:bg-gray-700 rounded-full p-4">.</button>
+            <button class="equalBtn bg-orange-500 hover:bg-orange-400 rounded-full p-6 btn-glow">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
